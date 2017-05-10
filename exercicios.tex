@@ -1,0 +1,77 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{indentfirst}
+
+% \usepackage{titlesec}
+% \newcommand{\sectionbreak}{\clearpage}
+
+% \newcommand{\N}{\mathbb{N}}
+% \newcommand{\Z}{\mathbb{Z}}
+% \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+% \newcommand{\C}{\mathbb{C}}
+% \newcommand{\F}{\mathbb{F}}
+
+% \newtheorem{theorem}{Teorema}
+% \theoremstyle{definition}
+% \newtheorem{example}{Exemplo}
+
+% \newcommand{\setl}[1]{\{#1\}}
+% \newcommand{\set}[2]{\{#1\mid#2\}}
+% \newcommand{\concept}[1]{\emph{#1}}
+% \newcommand{\topic}[1]{\subsection*{#1}}
+
+\title{Exercícios Resolvidos do Livro\\ Geometria Analítica e Álgebra Linear\\ de Elon Lages Lima\\ (Segunda Edição--Oitava Impressão)}
+\author{Gustavo de Oliveira}
+
+\begin{document}
+
+\maketitle
+
+\section{Seção 14 -- Vetores no Plano}
+
+\textbf{2.}
+Prove geometricamente que um quadrilátero é um paralelogramo se, e somente se, suas diagonais se cortam mutuamente ao meio.
+
+\textbf{Solução.}
+($\Rightarrow$)
+Suponha que o quadrilátero $ABCD$ é um paralelogramo.
+O paralelogramo é formado por dois pares de lados.
+Em cada par, os lados são paralelos e têm o mesmo comprimento.
+Portanto $\overrightarrow{AD} = \overrightarrow{BC}$ e $\overrightarrow{AB} = \overrightarrow{DC}$.
+Seja $P$ o ponto médio de $DB$, e seja $Q$ o ponto médio de $AC$.
+Queremos provar que $Q = P$.
+
+Escolhemos um sistema de coordenadas $OXY$ de modo que $A = (0,0)$, $B = (b,0)$ e $D = (c, d)$.
+Logo $\overrightarrow{AD} = (c,d)$ e $C = B + \overrightarrow{AD} = (b + c, d)$.
+Calculando os pontos $P$ e $Q$, obtemos
+\begin{align*}
+  P & = \left( \frac{c+b}{2}, \frac{d+0}{2} \right) = \left( \frac{b+c}{2}, \frac{d}{2} \right), \\
+  Q & = \left( \frac{b + c + 0}{2}, \frac{d+0}{2} \right) = \left( \frac{b+c}{2}, \frac{d}{2} \right).
+\end{align*}
+Portanto $P = Q$.
+
+($\Leftarrow$)
+Seja $P$ o ponto médio de $DB$, e seja $Q$ o ponto médio de $AC$.
+Suponha que as diagonais do paralelogramo se cortam mutuamente ao meio, ou seja, suponha que $P = Q$.
+Escolhemos um sistema de coordenadas $OXY$ de modo que $A = (0,0)$, $B = (b,0)$ e $D = (c, d)$.
+Temos então $\overrightarrow{AD} = (c,d)$ e $\overrightarrow{AB} = (b,0)$.
+Escrevemos $C = (x,y)$.
+Vamos determinar $x$ e $y$.
+Como $P$ e $Q$ são pontos médios, obtemos
+\begin{align*}
+  P & = \left( \frac{c+b}{2}, \frac{d}{2} \right), \\
+  Q & = \left( \frac{x}{2}, \frac{y}{2} \right).
+\end{align*}
+A igualdade $P = Q$ implica $x = c + b$ e $y = d$.
+Logo $(x,y) = (b + c, d)$, ou seja, $C = (b + c, d)$.
+Portanto $C = B + \overrightarrow{AD}$ e $C = D + \overrightarrow{AB}$, ou seja, $\overrightarrow{BC} = \overrightarrow{AD}$ e $\overrightarrow{DC} = \overrightarrow{AB}$.
+Isso implica que $ABCD$ é um paralelogramo.
+
+\end{document}
