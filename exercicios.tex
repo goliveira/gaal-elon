@@ -146,4 +146,41 @@ Portanto as retas tangentes são
   y = \frac{1}{2} x - 4 \qquad \text{e} \qquad y = \frac{1}{2} x + 4.
 \]
 
+\section*{Seção 17 -- Equação da Hipérbole}
+
+\textbf{2.}
+Para todo ponto $P = (m,n)$ na hipérbole $H : x^2/a^2 - y^2/b^2 = 1$, mostre que a reta $r: (m/a^2)x - (n/b^2)y = 1$ tem apenas o ponto $P$ em comum com $H$.
+A reta $r$ chama-se a \emph{tangente} a $H$ no ponto $P$.
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+A reta $r$ é tangente à hipérbole $H$ no ponto $P$ se e somente se $x = m$ e $y = n$ é a única solução do sistema
+\begin{align*}
+  (m/a^2) x - (n/b^2) y & = 1, \\
+  x^2/a^2 - y^2/b^2 & = 1.
+\end{align*}
+A primeira equação implica
+\[
+  x = \frac{a^2}{m} \left( 1 + \frac{n}{b^2} \right).
+\]
+Substituindo essa expressão para $x$ na segunda equação e desenvolvendo, obtemos
+\[
+  (a^2 n^2 - b^2 m^2) y^2 + b^2 a^2 2ny + b^4(a^2 - m^2) = 0.
+\]
+Como $P$ pertence à hipérbole, temos $a^2 n^2 - b^2 m^2 = -a^2 b^2$.
+Substituindo essa expressão na equação anterior e simplificado, encontramos
+\[
+  -a^2 y^2 + a^2 2ny + b^2 (a^2 - m^2) = 0.
+\]
+Calculamos o discriminante $\Delta$ dessa equação quadrática.
+Obtemos
+\[
+  \Delta = 4 a^2 ( a^2 n^2 - b^2 m^2 + b^2 a^2 ) = 4 a^2 (-a^2 b^2 + b^2 a^2 ) = 4 a^2 (0) = 0.
+\]
+Nesse cálculo, usamos novamente que $P$ pertence a $H$.
+Como $\Delta = 0$, a equação para $y$ possui apenas uma solução.
+Associado a essa solução, temos apenas um valor para $x$.
+Portanto o sistema de equações possui apenas uma solução $(x,y)$, ou seja, a reta $r$ é tangente à hipérbole, como queríamos provar.
+
 \end{document}
