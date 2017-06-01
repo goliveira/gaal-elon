@@ -197,6 +197,31 @@ Como $\Delta = 0$, a equação para $y$ possui apenas uma solução.
 Associado a essa solução, temos apenas um valor para $x$.
 Portanto o sistema de equações possui apenas uma solução $(x,y)$, ou seja, a reta $r$ é tangente à hipérbole, como queríamos provar.
 
+\section*{Seção 23 -- Transformações Lineares}
+
+\textbf{11.}
+Uma transformação linear $T : \R^2 \to \R^2$ de posto $2$ transforma toda reta numa reta.
+Prove isto.
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+Seja $T(x,y) = (ax + by, cx + dy)$, e seja $M$ a matriz de $T$.
+Como $M$ tem posto $2$, os vetores-coluna de $M$ são não-colinares.
+Se $r$ é uma reta vertical, então $r$ é formada pelos pontos $(x,y) = (\alpha,t)$ para $t \in \R$.
+Logo os pontos
+\[
+  T(x,y) = T(\alpha, t) = (a \alpha + bt, c \alpha + dt) = \alpha(a, c) + t(b,d)
+\]
+para $t \in \R$
+formam uma reta pois $(b,d) \neq (0,0)$ (caso contrário teríamos $ad - bc = 0$, o que é impossível).
+Se $r$ é uma reta não-vertical, então $r$ é o conjunto dos pontos $(x,y) = (t, \alpha t + \beta)$ para $t \in \R$.
+Logo os pontos
+\[
+  T(x,y) = T(t, \alpha t + \beta) = \beta(b,d) + t \big( (a,c) + \alpha (b,d) \big)
+\]
+para $t \in \R$ formam uma reta pois não existe $\alpha$ tal que $(a,c) + \alpha(b,d) = 0$ (caso contrário $(a,c)$ e $(b,d)$ seriam colineares).
+
 \section*{Seção 24 -- Coordenadas no Espaço}
 
 \textbf{5.}
