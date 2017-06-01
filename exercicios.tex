@@ -222,6 +222,36 @@ Logo os pontos
 \]
 para $t \in \R$ formam uma reta pois não existe $\alpha$ tal que $(a,c) + \alpha(b,d) = 0$ (caso contrário $(a,c)$ e $(b,d)$ seriam colineares).
 
+\textbf{15.}
+Seja $T : \R^2 \to \R^2$ uma transformação linear invertível.
+Mostre que $T$ transforma retas paralelas em retas paralelas, portanto paralelogramos em paralelogramos.
+E losangos?
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+Seja $T(x,y) = (ax + by, cx + dy)$, e seja $M$ a matriz de $T$.
+Como $T$ é invertível, para todo $(m,n) \in \R^2$, existe apenas um vetor $(x,y) \in \R^2$ tal que $T(x,y) = (m,n)$.
+Dito de outra forma, o sistema de equações
+\begin{align*}
+  ax + by & = m \\
+  cx + dy & = n
+\end{align*}
+possui apenas uma solução.
+Portanto as retas $ax + by = m$ e $cx + dy = n$ são concorrentes.
+Logo os vetores $(a,b)$ e $(c,d)$ são não-colineares, ou seja, $ad - bc \neq 0$.
+Isso implica que os vetores $(a,c)$ e $(b,d)$ são não-colineares, ou seja, que a matrix de $M$ tem posto 2.
+Pela solução do Exercício 11, para qualquer valor de $\alpha$, a transformação $T$ mapeia a reta $x = \alpha$ em uma reta paralela ao vetor $(b,d)$ que passa por $(a,c)$.
+Isso mostra que $T$ transforma as retas paralelas $x = \alpha$ e $x = \alpha'$ em retas paralelas ao vetor $(b,d)$.
+Pela solução do Exercício 11, a transformação $T$ mapeia a reta $y = \alpha x + \beta$ em uma reta paralela ao vetor $(a,c) + \alpha(b,d)$ que passa por $(a,c)$.
+Analogamente, a transformação $T$ mapeia a reta $y = \alpha' x + \beta$ em uma reta paralela ao vetor $(a,c) + \alpha'(b,d)$ que passa por $(a,c)$.
+Como $(a,b) + \alpha(c,d)$ e $(a,c) + \alpha'(b,d)$ são vetores colineares, concluímos que $T$ transforma retas não-verticais paralelas em retas não-verticais paralelas.
+Além disso, concluímos que $T$ transforma paralelogramos em paralelogramos.
+A transformação $T$ não mapeia losangos em losangos, em geral.
+De fato, considere o quadrado cujos vértices são os pontos $A = (0,0)$, $B = (1,0)$, $C = (1,1)$ e $D = (0,1)$ (esse é um exemplo de losango).
+Observamos que os os vetores unitários $\overrightarrow{AB} = (1,0)$ e $\overrightarrow{AD} = (0,1)$ são mapeados nos vetores $(a,c)$ e $(b,d)$, que não são unitários, em geral.
+Logo o quadrado $ABCD$ não é transformado em um quadrado, em geral.
+
 \section*{Seção 24 -- Coordenadas no Espaço}
 
 \textbf{5.}
