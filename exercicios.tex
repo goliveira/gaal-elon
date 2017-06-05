@@ -103,7 +103,7 @@ Além disso
 \[
   \overrightarrow{BQ} = \overrightarrow{BC} + \overrightarrow{CQ} = - \overrightarrow{CB} - \overrightarrow{QC} = - \overrightarrow{CB} + (1 - \alpha) \overrightarrow{CA}
 \]
-e, para algum número $\beta$, temos
+e, para algum $\beta \in \R$, temos
 \[
   \overrightarrow{PQ} = \beta \overrightarrow{BQ}.
 \]
@@ -168,7 +168,7 @@ A reta $r$ chama-se a \emph{tangente} a $H$ no ponto $P$.
 \vspace{\baselineskip}
 
 \emph{Solução.}
-A reta $r$ é tangente à hipérbole $H$ no ponto $P$ se e somente se $x = m$ e $y = n$ é a única solução do sistema
+A reta $r$ é tangente à hipérbole $H$ no ponto $P$ se, e somente se, $x = m$ e $y = n$ é a única solução do sistema
 \begin{align*}
   (m/a^2) x - (n/b^2) y & = 1 \\
   x^2/a^2 - y^2/b^2 & = 1.
@@ -186,14 +186,13 @@ Substituindo essa expressão na equação anterior e simplificado, encontramos
 \[
   -a^2 y^2 + a^2 2ny + b^2 (a^2 - m^2) = 0.
 \]
-Calculamos o discriminante $\Delta$ dessa equação quadrática.
-Obtemos
+Calculando o discriminante $\Delta$ dessa equação quadrática, obtemos
 \[
   \Delta = 4 a^2 ( a^2 n^2 - b^2 m^2 + b^2 a^2 ) = 4 a^2 (-a^2 b^2 + b^2 a^2 ) = 4 a^2 (0) = 0.
 \]
 Nesse cálculo, usamos novamente que $P$ pertence a $H$.
 Como $\Delta = 0$, a equação para $y$ possui apenas uma solução.
-Associado a essa solução, temos apenas um valor para $x$.
+Associado a essa solução temos apenas um valor para $x$.
 Portanto o sistema de equações possui apenas uma solução $(x,y)$, ou seja, a reta $r$ é tangente à hipérbole $H$.
 
 \section*{Seção 23 -- Transformações Lineares}
@@ -231,7 +230,7 @@ E losangos?
 
 \emph{Solução.}
 Seja $T(x,y) = (ax + by, cx + dy)$, e seja $M$ a matriz de $T$.
-Como $T$ é invertível, para todo $(m,n) \in \R^2$, existe apenas um vetor $(x,y) \in \R^2$ tal que $T(x,y) = (m,n)$.
+Como $T$ é invertível, para todo $(m,n) \in \R^2$ existe apenas um vetor $(x,y) \in \R^2$ tal que $T(x,y) = (m,n)$.
 Dito de outra forma, o sistema de equações
 \begin{align*}
   ax + by & = m \\
@@ -255,7 +254,7 @@ Logo o quadrado $ABCD$ não é transformado em um quadrado, em geral.
 \section*{Seção 24 -- Coordenadas no Espaço}
 
 \textbf{5.}
-Escreva a equação do plano vertical que passa pelos pontos $P = (2,3,4)$ e $Q = (1,1,758)$.
+Escreva a equação do plano vertical que passa pelos pontos $P\!=\!(2,3,4)$ e $Q = (1,1,758)$.
 
 \vspace{\baselineskip}
 
@@ -280,5 +279,6 @@ Escreva a equação geral de um plano vertical.
 \emph{Solução.}
 A equação geral de um plano vertical é $ax + by = c$, onde $a$, $b$ e $c$ são números reais.
 De fato, o conjunto de todos os pontos $(x,y,z)$ tais que $ax + by = c$ forma um plano que contém o eixo $OZ$ ou é paralelo ao eixo $OZ$.
+(Veja a solução do Exercício 5.)
 
 \end{document}
