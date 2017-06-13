@@ -378,6 +378,35 @@ De fato, considere o quadrado cujos vértices são os pontos $A = (0,0)$, $B = (
 Observamos que os os vetores unitários $\overrightarrow{AB} = (1,0)$ e $\overrightarrow{AD} = (0,1)$ são mapeados nos vetores $(a,c)$ e $(b,d)$, que não são unitários, em geral.
 Logo o quadrado $ABCD$ não é transformado em um quadrado, em geral.
 
+\vspace{\baselineskip}
+
+\textbf{17.}
+Dados $u = (1,2)$, $v = (3,4)$, $u' = (5,6)$ e $v' = (7,8)$, ache uma transformação linear $T : \mathbb{R}^2 \to \mathbb{R}^2$ tal que $Tu = u'$ e $Tv = v'$.
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+Uma transformação linear $T : \R^2 \to \R^2$ tem a forma $T(x,y) = (ax + by, cx + dy)$, onde $a, b, c, d \in \R$.
+Procuramos constantes $a$, $b$, $c$ e $d$ tais que $T(1,2) = (5,6)$ e $T(3,4) = (7,8)$, ou seja, $(a + 2b, c + 2d) = (5,6)$ e $(3a + 4b, 3c + 4d) = (7,8)$, ou seja, $a + 2b = 5$, $c + 2d = 6$ e $3a + 4b = 7$, $3c + 4d = 8$.
+Obtemos portanto um sistema de quatro equações e quatro incógnitas, $a$, $b$, $c$ e $d$.
+De fato, obtemos dois sistemas de duas equações e duas incógnitas, desacoplados:
+\[
+  \begin{aligned}
+    a + 2b & = 5 \\
+    3a + 4b & = 7
+  \end{aligned}
+  \qquad \qquad
+  \begin{aligned}
+    c + 2d & = 6 \\
+    3c + 4d & = 8.
+  \end{aligned}
+\]
+Resolvendo esses sistemas, obtemos $a = -3$, $b = 4$, $c = -4$ e $d = 5$.
+Portanto, a transformação linear procurada é
+\[
+  T(x,y) = (-3x + 4y, -4x + 5y).
+\]
+
 \section*{Seção 24 -- Coordenadas no Espaço}
 
 \textbf{5.}
