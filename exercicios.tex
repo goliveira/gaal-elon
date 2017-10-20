@@ -354,7 +354,7 @@ Prove isto.
 \vspace{\baselineskip}
 
 \emph{Solução.}
-Seja $T(x,y) = (ax + by, cx + dy)$, e seja $M$ a matriz de $T$.
+Seja $T(x,y) = (ax + by, cx + dy)$ e seja $M$ a matriz de $T$.
 Como $M$ tem posto $2$, os vetores-coluna de $M$ são não-colinares.
 Se $r$ é uma reta vertical, então $r$ é formada pelos pontos $(x,y) = (\alpha,t)$ para $t \in \R$.
 Logo, os pontos
@@ -363,7 +363,7 @@ Logo, os pontos
 \]
 para $t \in \R$ formam uma reta, pois $(b,d) \neq (0,0)$ (caso contrário teríamos $ad - bc = 0$, o que é impossível).
 Se $r$ é uma reta não-vertical, então $r$ é o conjunto dos pontos $(x,y) = (t, \alpha t + \beta)$ para $t \in \R$.
-Logo os pontos
+Logo, os pontos
 \[
   T(x,y) = T(t, \alpha t + \beta) = \beta(b,d) + t \big( (a,c) + \alpha (b,d) \big)
 \]
@@ -379,7 +379,7 @@ E losangos?
 \vspace{\baselineskip}
 
 \emph{Solução.}
-Seja $T(x,y) = (ax + by, cx + dy)$, e seja $M$ a matriz de $T$.
+Seja $T(x,y) = (ax + by, cx + dy)$ e seja $M$ a matriz de $T$.
 Como $T$ é invertível, para todo $(m,n) \in \R^2$ existe apenas um vetor $(x,y) \in \R^2$ tal que $T(x,y) = (m,n)$.
 Dito de outra forma, o sistema de equações
 \begin{align*}
@@ -409,7 +409,7 @@ Dados $u = (1,2)$, $v = (3,4)$, $u' = (5,6)$ e $v' = (7,8)$, ache uma transforma
 \vspace{\baselineskip}
 
 \emph{Solução.}
-Uma transformação linear $T : \R^2 \to \R^2$ tem a forma $T(x,y) = (ax + by, cx + dy)$, onde $a, b, c, d \in \R$.
+Seja $T(x,y) = (ax + by, cx + dy)$, onde $a, b, c, d \in \R$.
 Procuramos constantes $a$, $b$, $c$ e $d$ tais que $T(1,2) = (5,6)$ e $T(3,4) = (7,8)$, ou seja, $(a + 2b, c + 2d) = (5,6)$ e $(3a + 4b, 3c + 4d) = (7,8)$, ou seja, $a + 2b = 5$, $c + 2d = 6$ e $3a + 4b = 7$, $3c + 4d = 8$.
 Obtemos portanto um sistema de quatro equações e quatro incógnitas, $a$, $b$, $c$ e $d$.
 De fato, obtemos dois sistemas de duas equações e duas incógnitas, desacoplados:
@@ -457,8 +457,7 @@ Escreva a equação geral de um plano vertical.
 
 \emph{Solução.}
 A equação geral de um plano vertical é $ax + by = c$, onde $a$, $b$ e $c$ são números reais.
-De fato, o conjunto de todos os pontos $(x,y,z)$ tais que $ax + by = c$ forma um plano que contém o eixo $OZ$ ou é paralelo ao eixo $OZ$.
-(Veja a solução do Exercício 5.)
+De fato, o conjunto de todos os pontos $(x,y,z)$ tais que $ax + by = c$ forma um plano que contém o eixo $OZ$ ou é paralelo ao eixo $OZ$ (veja a solução do Exercício 5).
 
 \section*{Seção 29 -- Equação do Plano}
 
@@ -479,7 +478,7 @@ Obtenha uma equação para o plano que contém $P$ e é perpendicular ao segment
 
 \emph{Solução.}
 (a)
-Observamos que o plano é perpendicular à reta $AB$ se e somente se o plano é perpendicular à reta $OB'$ com $B' = (2-1,-1-2,2-3) = (1,-3,-1)$.
+Observamos que o plano é perpendicular à reta $AB$ se e somente se o plano é perpendicular à reta $OB'$ com $B' = (1,-3,-1)$.
 Logo uma equação para o plano é $x - 3y - z = d$ para alguma constante $d$.
 Como $P$ pertence ao plano, devemos ter $1(0) - 3(0) -1(0) = d$, ou seja, $d=0$.
 Portanto uma equação do plano é $x - 3y - z = 0$.
