@@ -535,4 +535,50 @@ Portanto, uma equação do plano é $-7x + 9y + z = d$ para alguma constante $d$
 Como $A$ pertence ao plano, devemos ter $-7(-1) + 9(1) + 1(2) = d$, ou seja, $d = 18$.
 Portanto, uma equação para o plano é $-7x + 9y + z = 18$.
 
+\section*{Seção 41 - Mudança de Coordenadas no Espaço}
+
+\textbf{1.}
+Ache números $\alpha$, $\beta$ de modo que os múltiplos $\alpha m$ e $\beta n$ das matrizes abaixo sejam matrizes ortogonais
+\[
+  m =
+  \begin{bmatrix}
+    2 & -2 & 1 \\
+    1 & 2 & 2 \\
+    2 & 1 & -2
+  \end{bmatrix},
+  \qquad n =
+  \begin{bmatrix}
+    6 & 3 & 2 \\
+    -3 & 2 & 6 \\
+    2 & -6 & 3
+  \end{bmatrix}.
+\]
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+Procuramos $\alpha$ tal que $(\alpha m)(\alpha m)^T = I$, ou seja, $\alpha^2 (m m^T) = I$.
+Calculando $mm^T$, obtemos
+\[
+  \alpha^2 (mm^T) = \alpha^2
+  \begin{bmatrix}
+    9 & 0 & 0 \\
+    0 & 9 & 0 \\
+    0 & 0 & 9
+  \end{bmatrix}.
+\]
+Portanto, a condição para $\beta$ é $\beta^2 9 = 1$, ou seja, $\beta = \pm 1/3$.
+
+Procuramos $\beta$ tal que $(\beta n)(\beta n)^T = I$, ou seja, $\beta^2 (n n^T) = I$.
+Calculando $nn^T$, obtemos
+\[
+  \beta^2 (nn^T) = \beta^2
+  \begin{bmatrix}
+    49 & 0 & 0 \\
+    0 & 49 & 0 \\
+    0 & 0 & 49
+  \end{bmatrix}.
+\]
+Portanto, a condição para $\beta$ é $\beta^2 49 = 1$, ou seja, $\beta = \pm 1/7$.
+
 \end{document}
