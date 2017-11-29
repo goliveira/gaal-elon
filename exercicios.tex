@@ -535,6 +535,76 @@ Portanto, uma equação do plano é $-7x + 9y + z = d$ para alguma constante $d$
 Como $A$ pertence ao plano, devemos ter $-7(-1) + 9(1) + 1(2) = d$, ou seja, $d = 18$.
 Portanto, uma equação para o plano é $-7x + 9y + z = 18$.
 
+\section*{Seção 31 - Sistemas de Equações Lineares com Três Incógnitas}
+
+\textbf{1.}
+Para cada um dos sistemas a seguir, decida se existem ou não soluções.
+No caso afirmativo, exiba todas as soluções do sistema em termos de um ou dois parâmetros independentes.
+\[
+  \text{(a)} \
+  \begin{aligned}
+    x + 2y + 3z & = 4 \\
+    2x + 3y + 4z & = 5
+  \end{aligned}
+  \qquad
+  \text{(b)} \
+  \begin{aligned}
+    2x - y + 5z & = 3 \\
+    4x - 2y + 10z & = 5
+  \end{aligned}
+  \qquad
+  \text{(c)} \
+  \begin{aligned}
+    6x - 4y + 12z & = 2 \\
+    9x - 6y + 18z & = 3
+  \end{aligned}
+\]
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+(a)
+Observamos que os vetores $l_1 = (1,2,3)$ e $l_2 = (2,3,4)$ não são colineares.
+Logo os planos definidos pelas equações se intersectam segundo uma reta, ou seja, o sistema possui soluções.
+A matriz aumentada do sistema é
+\[
+  \begin{bmatrix}
+    1 & 2 & 3 & 4 \\
+    2 & 3 & 4 & 5
+  \end{bmatrix}.
+\]
+Escalonando essa matriz, obtemos
+\[
+  \begin{bmatrix}
+    1 & 0 & -1 & -2 \\
+    0 & 1 & 2 & 3
+  \end{bmatrix}.
+\]
+Portanto as soluções do sistema são $x = -2 + t$, $y = 3 - 2t$, $z = t$ para $t \in \R$.
+
+(b)
+Observamos que os vetores $l_1 = (2,-1,5)$ e $l_2 = (4,-2,10)$ são colineares e os vetores $L_1 = (2,-1,5,3)$ e $L_2 = (4,-2,10,5)$ não são colineares.
+Logo os planos definidos pelas equações são paralelos, ou seja, o sistema não possui soluções.
+
+(c)
+Observamos que os vetores $l_1 = (6,-4,12)$ e $l_2 = (9,-6,18)$ são colineares e os vetores $L_1 = (6,-4,12,2)$ e $L_2 = (9,-6,18,3)$ são colineares.
+Logo os planos definidos pelas equações são coincidentes, ou seja, o sistema possui soluções.
+A matriz aumentada do sistema é
+\[
+  \begin{bmatrix}
+    6 & -4 & 12 & 2 \\
+    9 & -6 & 18 & 3
+  \end{bmatrix}.
+\]
+Escalonando essa matriz obtemos
+\[
+  \begin{bmatrix}
+    1 & -2/3 & 2 & 1/3 \\
+    0 & 0 & 0 & 0
+  \end{bmatrix}.
+\]
+Portanto as soluções do sistema são $x = 1/3 + (2/3)s - 2t$, $y = s$, $z = t$ para $s, t \in \R$.
+
 \section*{Seção 41 - Mudança de Coordenadas no Espaço}
 
 \textbf{1.}
