@@ -1,4 +1,4 @@
-# Exercícios
+# Soluções dos exercícios e errata
 
 * _Geometria Analítica e Álgebra Linear_ (de Elon Lages Lima), IMPA, 2015.
 
