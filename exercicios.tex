@@ -31,6 +31,65 @@ Seja $x_j$ a coordenada do ponto $X_j$.
 Então $|x_j - a| = j|a-b|/n$, ou seja, $x_j - a = j(b-a)/n$, pois $x_j > a$ e $b > a$.
 Portanto $x_j = a + j(b-a)/n$.
 
+\vspace{\baselineskip}
+
+\textbf{2.}
+Sejam $a$, $x$ e $b$, com $a < x < b$, as coordenadas dos pontos $A$, $X$ e $B$ sobre um eixo $\mathcal{E}$, respectivamente.
+Dizemos que o ponto $X$ divide o segmento de reta $AB$ em \emph{média e extrema razão} se $X$ satisfaz
+\[
+  \frac{d(A,X)}{d(A,B)} = \frac{d(X,B)}{d(A,X)}.
+\]
+O quociente $d(A,X)/d(A,B)$ é chamado \emph{razão áurea}.
+Supondo que $X$ divide o segmento de reta $AB$ em média e extrema razão, calcule $x$ em função de $a$ e $b$.
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+Usando coordenadas, a condição se escreve
+\[
+  \frac{|a-x|}{|a-b|} = \frac{|x-b|}{|a-x|}.
+\]
+Como $a < x < b$, essa expressão é equivalente a
+\[
+  \frac{x-a}{b-a} = \frac{b-x}{x-a},
+\]
+ou seja,
+\[
+  x^2 + (b-3a) x + (a^2-b^2+ab) = 0.
+\]
+O discriminante dessa equação é $\Delta = 5(b-a)^2$.
+Portanto as raízes da equação são
+\[
+  x_{\pm} = \frac{1}{2} (3a - b \pm \sqrt{5}(b-a)).
+\]
+Usando a condição $a < x < b$, obtemos que $a < x_+ < b$ e $x_- < a$.
+Logo a única raiz no intervalo $[a,b]$ é $x_+$.
+Portanto o ponto $X$ procurado tem coordenada
+\[
+  x = \frac{1}{2} ( (3-\sqrt{5}) a + (\sqrt{5}-1) b ).
+\]
+
+% \vspace{\baselineskip}
+
+% \textbf{3.}
+% Seja $O\,$ a origem de um eixo $\mathcal{E}$, e seja $A\,$ o ponto desse eixo cuja coordenada é igual a $1$.
+% Qual é a coordenada do ponto $X$ que divide o segmento de reta $OA$ em média e extrema razão?
+% No Exercício 2, calcule a \emph{razão áurea} $d(O,X)/d(O,A)$ (veja o exercício anterior).
+
+% \vspace{\baselineskip}
+
+% \emph{Solução.}
+% O ponto $X$ tem coordenada
+% \[
+%   x = \frac{1}{2} ( (3-\sqrt{5}) 0 + (\sqrt{5}-1) 1 ) = \frac{\sqrt{5}-1}{2}.
+% \]
+% A razão áurea é
+% \[
+%   \frac{d(O,X)}{d(O,A)} = \frac{\sqrt{5}-1}{2}.
+% \]
+
+% \vspace{\baselineskip}
+
 \section*{Seção 7 -- As Equações da Reta}
 
 \textbf{22.}
