@@ -211,6 +211,61 @@ Isso implica que $ABCD$ é um paralelogramo.
 
 \section*{Seção 15 -- Operações com Vetores}
 
+\textbf{1.}
+Dados os vetores $u$ e $v$, prove que as seguintes afirmações são equivalentes:
+\begin{enumerate}[(a)]
+  \item
+    Uma combinação linear $\alpha u + \beta v$ só pode ser igual a zero quando $\alpha = 0$ e $\beta = 0$.
+  \item
+    Se $\alpha u + \beta v = \alpha' u + \beta' v$, então $\alpha = \alpha'$ e $\beta = \beta'$.
+  \item
+    Nenhum dos vetores $u$ e $v$ é múltiplo do outro.
+  \item
+    Para $u = (a, b)$ e $v = (a', b')$, temos $a b' - a' b \neq 0$.
+  \item
+    Todo vetor do plano é combinação linear de $u$ e $v$.
+\end{enumerate}
+(Neste exercício, devem ser provadas as implicações (a) $\Rightarrow$ (b) $\Rightarrow$ (c) $\Rightarrow$ (d) $\Rightarrow$ (e) $\Rightarrow$ (a).)
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+(a) $\Rightarrow$ (b).
+Se $\alpha u + \beta v = \alpha' u + \beta' v$, então $(\alpha - \alpha')u + (\beta - \beta') v = 0$.
+Logo (a) implica que $\alpha - \alpha' = 0$ e $\beta - \beta' = 0$, ou seja, $\alpha = \alpha'$ e $\beta = \beta'$.
+
+(b) $\Rightarrow$ (c).
+Vamos provar que $-$(c) implica $-$(b).
+Se existe $\lambda$ tal que $u = \lambda v$, então $\alpha u + \beta v = \alpha' u + \beta' v$ com $\alpha = 1$, $\beta = -\lambda$, $\alpha' = 0$ e $\beta' = 0$, onde $\alpha \neq \alpha'$ e $\beta \neq \beta'$, ou seja, a afirmação $-$(b) é verdadeira.
+
+(c) $\Rightarrow$ (d).
+Vamos provar que $-$(d) implica $-$(c).
+Suponha que $\alpha \beta' - \alpha' \beta = 0$.
+Se $\alpha = \alpha' = \beta = \beta'$, então $u = 0$ e $v = 0$, e portanto $u = \lambda v$ para todo $\lambda$, ou seja, a afirmação $-$(c) é verdadeira.
+Se $\alpha = \beta = 0$, então $u = 0$, e portanto $u = 0v$.
+Logo $-$(c) é verdadeira.
+Se $\alpha \neq 0$ e $\beta \neq 0$, então $\beta'/\beta = \alpha'/\alpha = \lambda$ para alguma constante $\lambda$.
+Logo $\alpha' = \lambda \alpha$ e $\beta' = \lambda \beta$, ou seja, $(\alpha', \beta') = \lambda (\alpha, \beta)$, ou seja $v = \lambda u$, ou seja, a afirmação $-$(c) é verdadeira.
+
+(d) $\Rightarrow$ (e).
+Sejam $u = (\alpha,\beta)$, $v = (\alpha',\beta')$ e $w = (\gamma,\delta)$.
+Então a equação $w = xu + yv$ é equivalente ao sistema de equações
+\begin{align*}
+  \alpha x + \alpha' y & = \lambda \\
+  \beta x + \beta' y & = \gamma.
+\end{align*}
+Como $\alpha \beta' - \alpha' \beta \neq 0$, esse sistema possui apenas uma solução.
+De fato, a solução é
+\[
+  x = \frac{\beta' \gamma - \alpha' \delta}{\beta' \alpha - \alpha' \beta}, \qquad y = \frac{\beta \gamma - \alpha \delta}{\beta \alpha' - \alpha \beta'}.
+\]
+
+(e) $\Rightarrow$ (a).
+Temos que $xu + yv = 0$ para $x$ e $y$ únicos.
+Como $x = 0$ e $y = 0$ é solução desse sistema, essa deve ser a única solução, ou seja, a afirmação (a) é verdadeira.
+
+\vspace{\baselineskip}
+
 \textbf{7.}
 Seja $P$ um ponto interior ao triângulo $ABC$ tal que $\overrightarrow{PA} \!+\! \overrightarrow{PB} + \overrightarrow{PC} = 0$.
 Prove que as retas $AP$, $BP$ e $CP$ são medianas de $ABC$, logo $P$ é o ba\-ri\-cen\-tro desse triângulo.
