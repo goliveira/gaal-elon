@@ -545,7 +545,39 @@ Em particular, para $d > 0$, temos uma hipérbole com $c^2 = a^2 + b^2$, ou seja
 Portanto os focos da hipérbole são $(-c,0)$ e $(c,0)$, no sistema $s$ e $t$.
 Em termos das coordenadas $x$ e $y$, os focos são, respectivamente,
 \[
-  \left( \frac{-2}{\sqrt{10 \sqrt{5} - 20}}, \frac{4-2\sqrt{5}}{\sqrt{10 \sqrt{5} - 20}} \right), \qquad \left( \frac{2}{\sqrt{10 \sqrt{5} - 20}}, \frac{2\sqrt{5}-4}{\sqrt{10 \sqrt{5} - 20}} \right).
+  \left( \frac{-2\sqrt{d}}{\sqrt{10 \sqrt{5} - 20}}, \frac{4\sqrt{d}-2\sqrt{5d}}{\sqrt{10 \sqrt{5} - 20}} \right), \qquad \left( \frac{2\sqrt{d}}{\sqrt{10 \sqrt{5} - 20}}, \frac{2\sqrt{5d}-4\sqrt{d}}{\sqrt{10 \sqrt{5} - 20}} \right).
+\]
+
+(e)
+A matriz de $\varphi$ é
+\[
+  \begin{bmatrix}
+    1 & 1 \\
+    1 & -3
+  \end{bmatrix}.
+\]
+A equação característica de $\varphi$ é $\lambda^2 + 2 \lambda - 4 = 0$.
+Logo os autovalores são $\lambda_1 = -1-\sqrt{5}$ e $\lambda_2 = -1+\sqrt{5}$.
+Os autovetores unitários correspondentes são
+\[
+  u = \left( \frac{1}{\sqrt{10 + 4\sqrt{5}}}, \frac{-\sqrt{5}-2}{\sqrt{10 + 4\sqrt{5}}} \right), \qquad u^* = \left( \frac{2+\sqrt{5}}{\sqrt{10 + 4\sqrt{5}}}, \frac{1}{\sqrt{10 + 4\sqrt{5}}} \right).
+\]
+Consequentemente, se efetuarmos a mudança de variáveis
+\begin{align*}
+  x & = u_1 s - u_2 t, \\
+  y & = u_2 s + u_1 t,
+\end{align*}
+onde $u_1$ e $u_2$ são as coordenadas de $u$, a forma quadrática assume a forma
+\[
+  \overline{\varphi}(s,t) = \frac{s^2}{-1/(1+\sqrt{5})} + \frac{t^2}{1/(-1+\sqrt{5})}.
+\]
+Para $d = 0$, as linhas de nível $\overline{\varphi}(s,t) = d$ são as retas $t = \pm s (\sqrt{5} + 1)/2$.
+Para $d \neq 0$, as linhas de nível $\overline{\varphi}(s,t) = d$ são hipérboles.
+Em particular, para $d < 0$, temos uma hipérbole com $c^2 = a^2 + b^2$, ou seja, $c = \sqrt{3|d|}/2$.
+Portanto os focos da hipérbole são $(-c,0)$ e $(c,0)$, no sistema $s$ e $t$.
+Em termos das coordenadas $x$ e $y$, os focos são, respectivamente,
+\[
+  \left( \frac{-\sqrt{3|d|}}{2\sqrt{10 + 4\sqrt{5}}}, \frac{-\sqrt{15|d|}-2\sqrt{3|d|}}{2\sqrt{10 + 4\sqrt{5}}} \right), \ \ \left( \frac{2\sqrt{3|d|}+\sqrt{15|d|}}{2\sqrt{10 + 4\sqrt{5}}}, \frac{\sqrt{3|d|}}{2\sqrt{10 + 4\sqrt{5}}} \right)
 \]
 
 (f)
@@ -577,7 +609,8 @@ Em particular, para $d < 0$, temos uma hipérbole com $c^2 = a^2 + b^2$, ou seja
 Nesse caso, os focos da hipérbole são $(-c,0)$ e $(c,0)$, no sistema $s$ e $t$.
 Em termos das coordenadas $x$ e $y$, os focos são, respectivamente,
 \[
-  \left( -\frac{3}{5} c, \frac{4}{5}c \right), \qquad \left( \frac{3}{5}c, -\frac{4}{5}c \right).
+  \left( -\frac{3\sqrt{6|d|}}{30}, \frac{4\sqrt{6|d|}}{30} \right), \qquad \left( \frac{3\sqrt{6|d|}}{30}, -\frac{4\sqrt{6
+|d|}}{30} \right).
 \]
 
 \section*{Seção 23 -- Transformações Lineares}
