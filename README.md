@@ -1,4 +1,4 @@
-# GAAL – Soluções e Errata
+# GAAL Elon – Soluções e Errata
 
 Aqui você encontra as soluções dos exercícios e uma errata do livro
 
