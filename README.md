@@ -1,9 +1,19 @@
-# Soluções dos exercícios e errata
+# Soluções e Errata do Livro de GAAL do Elon
 
-* _Geometria Analítica e Álgebra Linear_ (de Elon Lages Lima), IMPA, 2015.
+Aqui você encontra as soluções dos exercícios e uma errata do livro
+
+* Geometria analítica e álgebra linear, de Elon Lages Lima, Segunda edição (oitava impressão), IMPA, 2015.
+
+As soluções de alguns exercícios ainda não estão disponíveis.
+
+## Conteúdo
+
+* Soluções [pdf](soluções.pdf)
+* Errata [pdf](errata.pdf)
 
 ## Licença
 
-Copyright (C) 2017 Gustavo de Oliveira. Esta obra está licenciada com uma
-Licença Creative Commons Atribuição 4.0 Internacional (veja a licença em
-https://creativecommons.org/licenses/by/4.0/deed.pt_BR).
+Copyright (C) 2017 Gustavo de Oliveira.
+Este material está publicado com uma licença GPL-3.0 (veja o arquivo [LICENSE][1]).
+
+[1]: LICENSE
