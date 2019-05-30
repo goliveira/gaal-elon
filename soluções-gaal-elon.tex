@@ -722,28 +722,27 @@ A matriz de $\varphi$ é
   \end{bmatrix}.
 \]
 A equação característica de $\varphi$ é $\lambda^2 + 5\lambda - 150 = 0$.
-Logo os autovalores são $\lambda_1 = -15$ e $\lambda_2 = 10$.
+Logo os autovalores são $\lambda_1 = 10$ e $\lambda_2 = -15$.
 Os autovetores unitários correspondentes são
 \[
-  u = \left( \frac{3}{5}, \frac{-4}{5} \right), \qquad u^* = \left( \frac{4}{5}, \frac{3}{5} \right).
+  u_1 = \left( \frac{4}{5}, \frac{3}{5} \right), \qquad u_2 = \left( \frac{3}{5}, \frac{-4}{5} \right).
 \]
 Consequentemente, se efetuarmos a mudança de variáveis
 \begin{align*}
-  x & = \frac{3}{5} s + \frac{4}{5} t, \\
-  y & = -\frac{4}{5} s + \frac{3}{5} t,
+  x & = \frac{4}{5} s - \frac{3}{5} t, \\
+  y & = \frac{3}{5} s + \frac{4}{5} t,
 \end{align*}
 a forma quadrática assume a forma
 \[
-  \overline{\varphi}(s,t) = -15 s^2 + 10 t^2 = \frac{s^2}{-1/15} + \frac{t^2}{1/10}.
+  \overline{\varphi}(s,t) = 10 s^2 - 15 t^2 = \frac{s^2}{1/10} - \frac{t^2}{1/15}.
 \]
-Para $d = 0$, as linhas de nível $\overline{\varphi}(s,t) = d$ são as retas $t = \pm \sqrt{3/2} s$.
+Para $d = 0$, as linhas de nível $\overline{\varphi}(s,t) = d$ são as retas $t = \pm \sqrt{2/3} s$.
 Para $d \neq 0$, as linhas de nível $\overline{\varphi}(s,t) = d$ são hipérboles.
-Em particular, para $d < 0$, temos uma hipérbole com $c^2 = a^2 + b^2$, ou seja, $c = \sqrt{6|d|}/6$.
+Em particular, para $d > 0$, temos uma hipérbole com $c^2 = a^2 + b^2$, ou seja, $c = \sqrt{6d}/6$.
 Nesse caso, os focos da hipérbole são $(-c,0)$ e $(c,0)$, no sistema $s$ e $t$.
 Em termos das coordenadas $x$ e $y$, os focos são, respectivamente,
 \[
-  \left( -\frac{3\sqrt{6|d|}}{30}, \frac{4\sqrt{6|d|}}{30} \right), \qquad \left( \frac{3\sqrt{6|d|}}{30}, -\frac{4\sqrt{6
-|d|}}{30} \right).
+  \left( \frac{-4\sqrt{6d}}{30}, \frac{-3\sqrt{6d}}{30} \right), \qquad \left( \frac{4\sqrt{6d}}{30}, \frac{3\sqrt{6d}}{30} \right).
 \]
 
 \section*{Seção 23 -- Transformações Lineares}
