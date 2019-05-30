@@ -656,17 +656,18 @@ A matriz de $\varphi$ é
   \end{bmatrix}.
 \]
 A equação característica de $\varphi$ é $\lambda^2 - 5/4 = 0$.
-Logo os autovalores são $\lambda_1 = \sqrt{5}/2$ e $\lambda_2 = -\sqrt{5}/2$.
+Logo os autovalores são $\lambda_1 = -\sqrt{5}/2$ e $\lambda_2 = \sqrt{5}/2$.
 Os autovetores unitários correspondentes são
 \[
-  u = \left( \frac{1}{\sqrt{10 - 4\sqrt{5}}}, \frac{\sqrt{5}-2}{\sqrt{10 - 4\sqrt{5}}} \right), \qquad u^* = \left( \frac{2-\sqrt{5}}{\sqrt{10 - 4\sqrt{5}}}, \frac{1}{\sqrt{10 - 4\sqrt{5}}} \right).
+  u_1 = \left( \frac{1}{\sqrt{10 + 4\sqrt{5}}}, \frac{-\sqrt{5}-2}{\sqrt{10 + 4\sqrt{5}}} \right), \qquad u_2 = \left( \frac{2+\sqrt{5}}{\sqrt{10 + 4\sqrt{5}}}, \frac{1}{\sqrt{10 + 4\sqrt{5}}} \right).
 \]
+Tomamos $(\cos \theta, \sin \theta) = u_2$.
 Consequentemente, se efetuarmos a mudança de variáveis
 \begin{align*}
-  x & = u_1 s - u_2 t, \\
-  y & = u_2 s + u_1 t,
+  x & = a s - b t, \\
+  y & = b s + a t,
 \end{align*}
-onde $u_1$ e $u_2$ são as coordenadas de $u$, a forma quadrática assume a forma
+a forma quadrática assume a forma
 \[
   \overline{\varphi}(s,t) = \frac{\sqrt{5}}{2} s^2 - \frac{\sqrt{5}}{2} t^2 = \frac{s^2}{2/\sqrt{5}} - \frac{t^2}{2/\sqrt{5}}.
 \]
@@ -676,7 +677,7 @@ Em particular, para $d > 0$, temos uma hipérbole com $c^2 = a^2 + b^2$, ou seja
 Portanto os focos da hipérbole são $(-c,0)$ e $(c,0)$, no sistema $s$ e $t$.
 Em termos das coordenadas $x$ e $y$, os focos são, respectivamente,
 \[
-  \left( \frac{-2\sqrt{d}}{\sqrt{10 \sqrt{5} - 20}}, \frac{4\sqrt{d}-2\sqrt{5d}}{\sqrt{10 \sqrt{5} - 20}} \right), \qquad \left( \frac{2\sqrt{d}}{\sqrt{10 \sqrt{5} - 20}}, \frac{2\sqrt{5d}-4\sqrt{d}}{\sqrt{10 \sqrt{5} - 20}} \right).
+  \left( \frac{-2\sqrt{d} -\sqrt{5d}}{\sqrt{10 \sqrt{5} + 20}}, \frac{2\sqrt{d}}{\sqrt{10 \sqrt{5} + 20}} \right), \qquad \left( \frac{-2\sqrt{d} -\sqrt{5d}}{\sqrt{10 \sqrt{5} + 20}}, \frac{2\sqrt{d}}{\sqrt{10 \sqrt{5} + 20}} \right).
 \]
 
 (e)
