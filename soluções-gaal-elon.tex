@@ -692,21 +692,22 @@ A equação característica de $\varphi$ é $\lambda^2 + 2 \lambda - 4 = 0$.
 Logo os autovalores são $\lambda_1 = -1-\sqrt{5}$ e $\lambda_2 = -1+\sqrt{5}$.
 Os autovetores unitários correspondentes são
 \[
-  u = \left( \frac{1}{\sqrt{10 + 4\sqrt{5}}}, \frac{-\sqrt{5}-2}{\sqrt{10 + 4\sqrt{5}}} \right), \qquad u^* = \left( \frac{2+\sqrt{5}}{\sqrt{10 + 4\sqrt{5}}}, \frac{1}{\sqrt{10 + 4\sqrt{5}}} \right).
+  u_1 = \left( \frac{1}{\sqrt{10 + 4\sqrt{5}}}, \frac{-\sqrt{5}-2}{\sqrt{10 + 4\sqrt{5}}} \right), \qquad u_2 = \left( \frac{2+\sqrt{5}}{\sqrt{10 + 4\sqrt{5}}}, \frac{1}{\sqrt{10 + 4\sqrt{5}}} \right).
 \]
+Tomamos $(\cos \theta, \sin \theta) = u_2$.
 Consequentemente, se efetuarmos a mudança de variáveis
 \begin{align*}
-  x & = u_1 s - u_2 t, \\
-  y & = u_2 s + u_1 t,
+  x & = a s - b t, \\
+  y & = b s + a t,
 \end{align*}
-onde $u_1$ e $u_2$ são as coordenadas de $u$, a forma quadrática assume a forma
+a forma quadrática assume a forma
 \[
-  \overline{\varphi}(s,t) = \frac{s^2}{-1/(1+\sqrt{5})} + \frac{t^2}{1/(-1+\sqrt{5})}.
+  \overline{\varphi}(s,t) = \frac{s^2}{1/(-1+\sqrt{5})} + \frac{t^2}{1/(-1-\sqrt{5})}.
 \]
 Para $d = 0$, as linhas de nível $\overline{\varphi}(s,t) = d$ são as retas $t = \pm s (\sqrt{5} + 1)/2$.
 Para $d \neq 0$, as linhas de nível $\overline{\varphi}(s,t) = d$ são hipérboles.
-Em particular, para $d < 0$, temos uma hipérbole com $c^2 = a^2 + b^2$, ou seja, $c = \sqrt{3|d|}/2$.
-Portanto os focos da hipérbole são $(-c,0)$ e $(c,0)$, no sistema $s$ e $t$.
+Em particular, para $d > 0$, temos uma hipérbole com $c^2 = a^2 + b^2$, ou seja, $c = \sqrt{3|d|}/2$.
+Portanto os focos da hipérbole são $(-c,0)$ e $(c,0)$ no sistema $s$ e $t$.
 Em termos das coordenadas $x$ e $y$, os focos são, respectivamente,
 \[
   \left( \frac{-\sqrt{3|d|}}{2\sqrt{10 + 4\sqrt{5}}}, \frac{-\sqrt{15|d|}-2\sqrt{3|d|}}{2\sqrt{10 + 4\sqrt{5}}} \right), \ \ \left( \frac{2\sqrt{3|d|}+\sqrt{15|d|}}{2\sqrt{10 + 4\sqrt{5}}}, \frac{\sqrt{3|d|}}{2\sqrt{10 + 4\sqrt{5}}} \right)
