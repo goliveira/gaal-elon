@@ -437,44 +437,54 @@ Portanto a equação define o conjunto vazio.
 
 \section*{Seção 14 -- Vetores no Plano}
 
-\textbf{2.}
+\textbf{S14.E2.}
 Prove geometricamente que um quadrilátero é um paralelogramo se, e somente se, suas diagonais se cortam mutuamente ao meio.
 
 \vspace{\baselineskip}
 
 \emph{Solução.}
 ($\Rightarrow$)
-Suponha que o quadrilátero $ABCD$ é um paralelogramo.
-O paralelogramo é formado por dois pares de lados.
-Em cada par de lados, os lados são paralelos e têm o mesmo comprimento.
-Portanto $\overrightarrow{AD} = \overrightarrow{BC}$ e $\overrightarrow{AB} = \overrightarrow{DC}$.
-Seja $P$ o ponto médio de $DB$, e seja $Q$ o ponto médio de $AC$.
-Vamos provar que $Q = P$.
-Escolhemos um sistema de coordenadas $OXY$ de modo que $A = (0,0)$, $B = (b,0)$ e $D = (c, d)$.
-Logo $\overrightarrow{AD} = (c,d)$ e $C = B + \overrightarrow{AD} = (b + c, d)$.
-Calculando os pontos $P$ e $Q$, obtemos
+Suponha que o quadrilátero (com vértices consecutivos) $ABCD$ é um paralelogramo.
+Então $\overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CD} + \overrightarrow{DA} = 0$.
+Além disso, existem constantes $\alpha$ e $\beta$ tais que $\overrightarrow{AB} = \alpha \overrightarrow{DC}$ e $\overrightarrow{AD} = \beta \overrightarrow{BC}$.
+Logo $\overrightarrow{AB} = -\alpha \overrightarrow{CD}$ e $\overrightarrow{DA} = -\beta \overrightarrow{BC}$.
+Portanto $-\alpha \overrightarrow{CD} + \overrightarrow{BC} + \overrightarrow{CD} -\beta \overrightarrow{BC} = 0$, ou seja, $(1-\alpha) \overrightarrow{CD} + (1-\beta) \overrightarrow{BC} = 0$.
+Como $ABCD$ é um quadrilátero, os vetores $\overrightarrow{CD}$ e $\overrightarrow{BC}$ não são colineares.
+Logo a última igualdade implica $1 - \alpha = 0$ e $1 - \beta = 0$, isto é, $\alpha = 1$ e $\beta = 1$.
+Portanto $\overrightarrow{AB} = \overrightarrow{DC}$ e $\overrightarrow{AD} = \overrightarrow{BC}$.
+Agora, temos duas relações que envolvem as diagonais do paralelogramo:
 \begin{align*}
-  P & = \left( \frac{c+b}{2}, \frac{d+0}{2} \right) = \left( \frac{b+c}{2}, \frac{d}{2} \right), \\
-  Q & = \left( \frac{b + c + 0}{2}, \frac{d+0}{2} \right) = \left( \frac{b+c}{2}, \frac{d}{2} \right).
+  \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CA} = 0, \\
+  \overrightarrow{AB} + \overrightarrow{BD} + \overrightarrow{DA} = 0.
 \end{align*}
-Portanto $P = Q$.
+Vamos eliminar dessas equações os vetores correspondentes aos lados do quadrilátero escrevendo-os em termos das direções diagonais.
+Usando as relações acima, obtemos
+\begin{align*}
+  \overrightarrow{AB} + \overrightarrow{BC} + \overrightarrow{CA} = 0, \\
+  \overrightarrow{AB} + \overrightarrow{BD} - \overrightarrow{BC} = 0.
+\end{align*}
+Somando as duas igualdades, chegamos a
+\[
+  2\overrightarrow{AB} + \overrightarrow{CA} + \overrightarrow{BD} = 0.
+\]
+Como $A$, $B$, $C$ e $D$ não são colineares, as retas $AC$ e $BD$ que contém as diagonais são concorrentes em um ponto $M$.
+Sejam $\lambda$ e $\gamma$ constantes tais que $\overrightarrow{AM} = \lambda \overrightarrow{AC}$ e $\overrightarrow{MB} = \gamma \overrightarrow{DB}$.
+Calculamos
+\begin{align*}
+  2\overrightarrow{AB} + \overrightarrow{CA} + \overrightarrow{BD} & = 0 \\
+  2(\overrightarrow{AM} + \overrightarrow{MB}) + \overrightarrow{CA} + \overrightarrow{BD} & = 0 \\
+  2(\lambda \overrightarrow{AC} + \gamma \overrightarrow{DB}) - \overrightarrow{AC} - \overrightarrow{DB} & = 0 \\
+  (2\lambda - 1) \overrightarrow{AC} + (2\gamma - 1) \overrightarrow{DB} & = 0.
+\end{align*}
+Essa iqualdade implica $2\lambda - 1 = 0$ e $2\gamma - 1 = 0$, ou seja, $\lambda = 1/2$ e $\gamma = 1/2$, como queríamos provar.
 
 ($\Leftarrow$)
-Seja $P$ o ponto médio de $DB$, e seja $Q$ o ponto médio de $AC$.
-Suponha que as diagonais do paralelogramo se cortam mutuamente ao meio, ou seja, suponha que $P = Q$.
-Escolhemos um sistema de coordenadas $OXY$ de modo que $A = (0,0)$, $B = (b,0)$ e $D = (c, d)$.
-Temos então $\overrightarrow{AD} = (c,d)$ e $\overrightarrow{AB} = (b,0)$.
-Escrevemos $C = (x,y)$.
-Vamos determinar $x$ e $y$.
-Calculando os pontos $P$ e $Q$, obtemos
-\begin{align*}
-  P & = \left( \frac{c+b}{2}, \frac{d}{2} \right), \\
-  Q & = \left( \frac{x}{2}, \frac{y}{2} \right).
-\end{align*}
-A igualdade $P = Q$ implica $x = c + b$ e $y = d$.
-Logo $(x,y) = (b + c, d)$, ou seja, $C = (b + c, d)$.
-Portanto $C = B + \overrightarrow{AD}$ e $C = D + \overrightarrow{AB}$, ou seja, $\overrightarrow{BC} = \overrightarrow{AD}$ e $\overrightarrow{DC} = \overrightarrow{AB}$.
-Isso implica que $ABCD$ é um paralelogramo.
+Suponha que as diagonais de $ABCD$ se bissectam em um ponto $M$.
+Então $\overrightarrow{AM} = \overrightarrow{MC}$ e $\overrightarrow{BM} = \overrightarrow{MD}$.
+Mas $\overrightarrow{BC} = \overrightarrow{BM} + \overrightarrow{MC}$ e $\overrightarrow{AD} = \overrightarrow{AM} + \overrightarrow{MD}$.
+Logo $\overrightarrow{BC} = \overrightarrow{AD}$.
+Analogamente provamos que $\overrightarrow{AB} = \overrightarrow{DC}$.
+Portanto $ABCD$ é um paralelogramo.
 
 \section*{Seção 15 -- Operações com Vetores}
 
