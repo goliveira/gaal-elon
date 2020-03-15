@@ -488,7 +488,7 @@ Portanto $ABCD$ é um paralelogramo.
 
 \section*{Seção 15 -- Operações com Vetores}
 
-\textbf{1.}
+\textbf{S15.E1.}
 Dados os vetores $u$ e $v$, prove que as seguintes afirmações são equivalentes:
 \begin{enumerate}[(a)]
   \item
@@ -508,8 +508,9 @@ Dados os vetores $u$ e $v$, prove que as seguintes afirmações são equivalente
 
 \emph{Solução.}
 (a) $\Rightarrow$ (b).
+Suponha (a), ou seja, suponha que $\alpha u + \beta v = 0$ implica $\alpha = 0$ e $\beta = 0$.
 Se $\alpha u + \beta v = \alpha' u + \beta' v$, então $(\alpha - \alpha')u + (\beta - \beta') v = 0$.
-Logo (a) implica que $\alpha - \alpha' = 0$ e $\beta - \beta' = 0$, ou seja, $\alpha = \alpha'$ e $\beta = \beta'$.
+Logo (a) implica $\alpha - \alpha' = 0$ e $\beta - \beta' = 0$, ou seja, $\alpha = \alpha'$ e $\beta = \beta'$.
 
 (b) $\Rightarrow$ (c).
 Vamos provar que $-$(c) implica $-$(b).
@@ -517,28 +518,30 @@ Se existe $\lambda$ tal que $u = \lambda v$, então $\alpha u + \beta v = \alpha
 
 (c) $\Rightarrow$ (d).
 Vamos provar que $-$(d) implica $-$(c).
-Suponha que $\alpha \beta' - \alpha' \beta = 0$.
-Se $\alpha = \alpha' = \beta = \beta'$, então $u = 0$ e $v = 0$, e portanto $u = \lambda v$ para todo $\lambda$, ou seja, a afirmação $-$(c) é verdadeira.
-Se $\alpha = \beta = 0$, então $u = 0$, e portanto $u = 0v$.
+Suponha $a b' - a' b = 0$.
+Se $a = a' = b = b'$, então $u = 0$ e $v = 0$, e portanto $u = \lambda v$ para todo $\lambda$, ou seja, a afirmação $-$(c) é verdadeira.
+Se $a = b = 0$, então $u = 0$, e portanto $u = 0v$.
 Logo $-$(c) é verdadeira.
-Se $\alpha \neq 0$ e $\beta \neq 0$, então $\beta'/\beta = \alpha'/\alpha = \lambda$ para alguma constante $\lambda$.
-Logo $\alpha' = \lambda \alpha$ e $\beta' = \lambda \beta$, ou seja, $(\alpha', \beta') = \lambda (\alpha, \beta)$, ou seja $v = \lambda u$, ou seja, a afirmação $-$(c) é verdadeira.
+Se $a \neq 0$ e $b \neq 0$, então $b'/b = a'/a = \lambda$ em que $\lambda$ é uma constante.
+Logo $a' = \lambda a$ e $b' = \lambda b$, ou seja, $(a', b') = \lambda (a, b)$, ou seja $v = \lambda u$, ou seja, a afirmação $-$(c) é verdadeira.
 
 (d) $\Rightarrow$ (e).
-Sejam $u = (\alpha,\beta)$, $v = (\alpha',\beta')$ e $w = (\gamma,\delta)$.
+Sejam $u = (a,b)$, $v = (a',b')$ e $w = (\gamma,\delta)$.
 Então a equação $w = xu + yv$ é equivalente ao sistema de equações
 \begin{align*}
-  \alpha x + \alpha' y & = \lambda \\
-  \beta x + \beta' y & = \gamma.
+  a x + a' y & = \lambda \\
+  b x + b' y & = \gamma.
 \end{align*}
-Como $\alpha \beta' - \alpha' \beta \neq 0$, esse sistema possui apenas uma solução.
+Como $a b' - a' b \neq 0$, esse sistema possui apenas uma solução.
 De fato, a solução é
 \[
-  x = \frac{\beta' \gamma - \alpha' \delta}{\beta' \alpha - \alpha' \beta}, \qquad y = \frac{\beta \gamma - \alpha \delta}{\beta \alpha' - \alpha \beta'}.
+  x = \frac{b' \gamma - a' \delta}{b' a - a' b}, \qquad y = \frac{b \gamma - a \delta}{b a' - a b'}.
 \]
 
 (e) $\Rightarrow$ (a).
-Temos que $xu + yv = 0$ para $x$ e $y$ únicos.
+Suponha (e).
+Então, em particular, o vetor $0$ é combinação de $u$ e $v$.
+Logo $xu + yv = 0$ para $x$ e $y$ únicos.
 Como $x = 0$ e $y = 0$ é solução desse sistema, essa deve ser a única solução, ou seja, a afirmação (a) é verdadeira.
 
 \vspace{\baselineskip}
