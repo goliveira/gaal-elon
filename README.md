@@ -1,6 +1,6 @@
 # GAAL Elon – Soluções e Errata
 
-Neste repositório você encontra as soluções de alguns dos exercícios e uma errata do livro
+Neste repositório você encontra as soluções de alguns exercícios e uma errata do livro
 
 * Geometria analítica e álgebra linear, de Elon Lages Lima, Segunda edição (oitava impressão), IMPA, 2015.
 
@@ -9,9 +9,16 @@ Neste repositório você encontra as soluções de alguns dos exercícios e uma 
 * Soluções [[pdf](soluções-gaal-elon.pdf)]
 * Errata [[pdf](errata-gaal-elon.pdf)]
 
+## Como contribuir?
+
+Você pode contribuir enviando a solução de um exercício em formato LaTeX diretamente aqui no GitHub através de um _pull request_ ou por e-mail para goliveira5d@gmail.com.
+
+Veja a [página de ajuda do GitHub][1] para instruções de como criar uma _bifurcação_ e depois um _pull request_.
+
 ## Licença
 
 Copyright (C) 2017 Gustavo de Oliveira.
-Este material está publicado com a licença GPL-3.0 (veja o arquivo [LICENSE][1]).
+Este material está publicado com a licença GPL-3.0 (veja o arquivo [LICENSE][2]).
 
-[1]: LICENSE
+[1]: https://help.github.com/pt/github/collaborating-with-issues-and-pull-requests
+[2]: LICENSE
