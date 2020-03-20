@@ -11,7 +11,7 @@ Neste repositório você encontra as soluções de alguns exercícios e uma erra
 
 ## Como contribuir?
 
-Você pode contribuir enviando a solução de um exercício em formato LaTeX diretamente aqui no GitHub através de um _pull request_ ou por e-mail para goliveira5d@gmail.com.
+Você pode contribuir enviando a solução de um exercício em formato LaTeX diretamente aqui no GitHub, através de um _pull request_, ou por e-mail para goliveira5d@gmail.com.
 
 Veja a [página de ajuda do GitHub][1] para instruções de como criar uma _bifurcação_ e depois um _pull request_.
 
