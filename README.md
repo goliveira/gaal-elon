@@ -17,8 +17,8 @@ Veja a [página de ajuda do GitHub][1] para instruções de como criar uma _bifu
 
 ## Licença
 
-Copyright (C) 2017 Gustavo de Oliveira.
-Este material está publicado com a licença GPL-3.0 (veja o arquivo [LICENSE][2]).
+Copyright (C) 2020 Gustavo de Oliveira.
+Publicado com a licença GPL-3.0 (veja o arquivo [LICENSE][2]).
 
 [1]: https://help.github.com/pt/github/collaborating-with-issues-and-pull-requests
 [2]: LICENSE
