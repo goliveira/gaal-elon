@@ -1,6 +1,6 @@
 # GAAL Elon – Soluções e Errata
 
-Neste repositório você encontra as soluções de alguns exercícios e uma errata do livro
+Nesta página você encontra as soluções de alguns exercícios e uma errata do livro
 
 * Geometria analítica e álgebra linear, de Elon Lages Lima, Segunda edição (oitava impressão), IMPA, 2015.
 
