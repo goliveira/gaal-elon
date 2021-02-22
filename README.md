@@ -1,6 +1,6 @@
 # GAAL Elon – Soluções e Errata
 
-Nesta página você encontra as soluções de alguns exercícios e uma errata do livro
+Neste repositório você encontra as soluções de alguns exercícios e uma errata do livro
 
 * Geometria analítica e álgebra linear, de Elon Lages Lima, Segunda edição (oitava impressão), IMPA, 2015.
 
@@ -17,8 +17,8 @@ Veja a [página de ajuda do GitHub][1] para instruções de como criar uma _bifu
 
 ## Licença
 
-Copyright (C) 2020 Gustavo de Oliveira.
-Publicado com a licença GPL-3.0 (veja o arquivo [LICENSE][2]).
+Copyright (C) 2020-2021 Gustavo de Oliveira.
+Publicado com a licença GPL-3.0 ([License][2]).
 
 [1]: https://help.github.com/pt/github/collaborating-with-issues-and-pull-requests
-[2]: LICENSE
+[2]: LICENSE.txt
