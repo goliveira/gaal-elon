@@ -1,0 +1,27 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{~/Templates/goliveira.tex}
+
+\title{GAAL -- Seção 1 -- Exercício 1}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\textbf{E1.S1.}
+Sejam $a < b$ respectivamente as coordenadas dos pontos $A$ e $B$ sobre o eixo $E$.
+Determine as coordenadas dos pontos $X_1, \dots, X_{n-1}$ que dividem o segmento $AB$ em $n$ partes iguais.
+
+\vspace{\baselineskip}
+
+\emph{Solução.}
+Para $j \in \{1, \dots, n-1 \}$, observamos que $d(X_j,A) = j d(A,B)/n$.
+Seja $x_j$ a coordenada do ponto $X_j$.
+Então $|x_j - a| = j|a-b|/n$, ou seja, $x_j - a = j(b-a)/n$, pois $x_j > a$ e $b > a$.
+Portanto $x_j = a + j(b-a)/n$, ou ainda $x_j = (1-j/n) + (j/n)b$ para $j \in \{1, \dots, n-1 \}$.
+
+\end{document}
