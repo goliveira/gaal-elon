@@ -1,7 +1,7 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[brazilian]{babel}
 \usepackage[T1]{fontenc}
-\input{~/Templates/goliveira.tex}
+\input{config.tex}
 
 \title{GAAL -- Seção 1 -- Exercício 2}
 \author{\empty}
@@ -12,40 +12,40 @@
 
 \onlyinsubfileone
 
-\textbf{E2.S1.}
-Sejam $a < x < b$ respectivamente as coordenadas dos pontos $A$, $X$ e $B$ do eixo $E$.
-Diz-se que o ponto $X$ divide o segmento $AB$ em \emph{média e extrema razão} quando se tem
-\[
-  \frac{d(A,X)}{d(A,B)} = \frac{d(X,B)}{d(A,X)}.
-\]
-(O quociente $d(A,X)/d(A,B)$ é chamado \emph{razão áurea}.)
-Supondo que $X$ divide o segmento de reta $AB$ em média e extrema razão, calcule $x$ em função de $a$ e $b$.
+\begin{exercicio-gaal}[E2.S1]
+  Sejam $a < x < b$ respectivamente as coordenadas dos pontos $A$, $X$ e $B$ do eixo $E$.
+  Diz-se que o ponto $X$ divide o segmento $AB$ em \emph{média e extrema razão} quando se tem
+  \[
+    \frac{d(A,X)}{d(A,B)} = \frac{d(X,B)}{d(A,X)}.
+  \]
+  (O quociente $d(A,X)/d(A,B)$ é chamado \emph{razão áurea}.)
+  Supondo que $X$ divide o segmento de reta $AB$ em média e extrema razão, calcule $x$ em função de $a$ e $b$.
+\end{exercicio-gaal}
 
-\vspace{\baselineskip}
-
-\emph{Solução.}
-Em coordenadas, a condição dada corresponde a
-\[
-  \frac{|a-x|}{|a-b|} = \frac{|x-b|}{|a-x|}.
-\]
-Como $a < x < b$, essa igualdade é equivalente a
-\[
-  \frac{x-a}{b-a} = \frac{b-x}{x-a},
-\]
-ou seja,
-\[
-  x^2 + (b-3a) x + (a^2-b^2+ab) = 0.
-\]
-O discriminante dessa equação é $\Delta = 5(b-a)^2$.
-Portanto as raízes são
-\[
-  x_{\pm} = \frac{1}{2} (3a - b \pm \sqrt{5}(b-a)).
-\]
-Usando a condição $a < x < b$, obtemos que $a < x_+ < b$ e $x_- < a$.
-Logo a única raiz no intervalo $[a,b]$ é $x_+$.
-Portanto o ponto $X$ procurado tem coordenada
-\[
-  x = \frac{1}{2} ( (3-\sqrt{5}) a + (\sqrt{5}-1) b ).
-\]
+\begin{proof}[Solução]
+  Em coordenadas, a condição dada corresponde a
+  \[
+    \frac{|a-x|}{|a-b|} = \frac{|x-b|}{|a-x|}.
+  \]
+  Como $a < x < b$, essa igualdade é equivalente a
+  \[
+    \frac{x-a}{b-a} = \frac{b-x}{x-a},
+  \]
+  ou seja,
+  \[
+    x^2 + (b-3a) x + (a^2-b^2+ab) = 0.
+  \]
+  O discriminante dessa equação é $\Delta = 5(b-a)^2$.
+  Portanto as raízes são
+  \[
+    x_{\pm} = \frac{1}{2} (3a - b \pm \sqrt{5}(b-a)).
+  \]
+  Usando a condição $a < x < b$, obtemos que $a < x_+ < b$ e $x_- < a$.
+  Logo a única raiz no intervalo $[a,b]$ é $x_+$.
+  Portanto o ponto $X$ procurado tem coordenada
+  \[
+    x = \frac{1}{2} ( (3-\sqrt{5}) a + (\sqrt{5}-1) b ).
+  \]
+\end{proof}
 
 \end{document}
