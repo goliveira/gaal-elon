@@ -1,0 +1,32 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{config.tex}
+
+\title{GAAL -- Seção 1 -- Exercício 3}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E3.S1]
+  Se $O$ é a origem do eixo $E$ e $A$ é o ponto desse eixo que tem coordenada $1$, qual é a coordenada do ponto $X$ que divide o segmento de reta $OA$ em média e extrema razão?
+  No Exercício 2, calcule a \emph{razão áurea} $d(O,X)/d(O,A)$.
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  O ponto $X$ tem coordenada
+  \[
+    x = \frac{1}{2} ( (3-\sqrt{5}) 0 + (\sqrt{5}-1) 1 ) = \frac{\sqrt{5}-1}{2}.
+  \]
+  Calculamos $d(O,A) = |0-1| = 1$.
+  Portanto a razão áurea é
+  \[
+    \frac{d(O,X)}{d(O,A)} = \frac{\sqrt{5}-1}{2}.
+  \]
+\end{proof}
+
+\end{document}
