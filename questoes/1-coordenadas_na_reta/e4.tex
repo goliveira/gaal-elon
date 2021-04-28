@@ -1,0 +1,28 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{config.tex}
+
+\title{GAAL -- Seção 1 -- Exercício 4}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E4.S1]
+  Os pontos $A$, $B$ e $X$ sobre o eixo $E$ têm coordenadas $a$, $b$ e $x$ respectivamente.
+  Se $X'$ é o simétrico de $X$ em relação ao ponto $A$ e $X''$ é o simétrico de $X'$ em relação a $B$, quais são as coordenadas de $X'$ e $X''$?
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  Sejam $x'$ e $x''$ as coordenadas de $X'$ e $X''$.
+  Como $A$ é o ponto médio de $XX'$, temos $a = (x+x')/2$.
+  Logo $x' = 2a - x$.
+  Como $B$ é o ponto médio de $X'X''$, temos $b = (x'+x'')/2$.
+  Portanto $x'' = 2b - x' = 2(b-a) + x$.
+\end{proof}
+
+\end{document}
