@@ -1,0 +1,29 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{config.tex}
+
+\title{GAAL -- Seção 1 -- Exercício 5}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E5.S1]
+  Dados os pontos $A$, $B$ no eixo $E$, defina a distância orientada $\delta(A,B)$ entre eles pondo $\delta(A,B) = d(A,B)$ se $A$ está à esquerda de $B$ e $\delta(A,B) = -d(A,B)$ se $A$ está à direita de $B$.
+  Prove que para quaisquer $A$, $B$ e $C$ do eixo $E$ tem-se $\delta(A,B) + \delta(B,C) + \delta (C,A) = 0$.
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  Sem perda de generalidade podemos supor que $A$ está à esquerda de $B$ e que $B$ está à esquerda de $C$.
+  Logo
+  \[
+    \delta(A,B) + \delta(B,C) + \delta (C,A) = d(A,B) + d(B,C) - d(C,A) = 0
+  \]
+  pois $d(A,B) + d(B,C) = d(C,A)$, já que o ponto $B$ pertence ao segmento de reta $AC$.
+\end{proof}
+
+\end{document}
