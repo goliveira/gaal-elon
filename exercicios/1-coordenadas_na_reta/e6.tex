@@ -1,0 +1,39 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{config.tex}
+
+\title{GAAL -- Seção 1 -- Exercício 6}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E6.S1]
+  Sejam $a < b < c$ respectivamente as coordenadas dos pontos $A$, $B$ e $C$ situados sobre um eixo.
+  Sabendo que $a = 17$, $c = 32$ e
+  \[
+    \frac{d(A,B)}{d(A,C)} = \frac{2}{3},
+  \]
+  qual é o valor de $b$?
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  Usando a fórmula $d(X,Y) = |x-y|$, temos que
+  \[
+    \frac{3}{2} = \frac{d(A,B)}{d(A,C)} = \frac{|a-b|}{|a-c|} = \frac{|17-b|}{|17-32|}.
+  \]
+  Como $b > 17$ e $32 > 17$, essa equação é equivalente a
+  \[
+    \frac{b-17}{32-17} = \frac{2}{3},
+  \]
+  ou seja,
+  \[
+    b = \frac{2}{3} 15 + 17 = 27.
+  \]
+\end{proof}
+
+\end{document}
