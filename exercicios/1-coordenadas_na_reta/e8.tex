@@ -1,0 +1,53 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{../../config.tex}
+
+\title{GAAL -- Seção 1 -- Exercício 8}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E8.S1]
+  Sejam $A$, $B$, $C$, $D$ pontos dispostos nesta ordem sobre um eixo~$E$.
+  Esboce os gráficos das funções $\varphi, f, g : E \to \R$ dadas por
+  \begin{align*}
+    \varphi(X) & = d(X,A) + d(X,B), \\
+    f(X) & = d(X,A) + d(X,B) + d(X,C), \\
+    g(X) & = d(X,A) + d(X,B) + d(X,C) + d(X,D).
+  \end{align*}
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  Por exemplo, tomamos $A$, $B$, $C$ e $D$ com coordenadas $0$, $1$, $3$ e $7$, respectivamente.
+  Seja $x$ a coordenada de $X$.
+  Então
+  \begin{align*}
+    \psi(x) & = |x| + |x-1|, \\
+    f(x) & = |x| + |x-1| + |x-3|, \\
+    g(x) & = |x| + |x-1| + |x-3| + |x-7|.
+  \end{align*}
+  Para ver o gráfico dessas funções, visite \texttt{https://sagecell.sagemath.org} e execute o código
+\begin{verbatim}
+a = 0
+b = 1
+c = 3
+d = 7
+m = -5
+n = 8
+phi(x) = abs(x-a) + abs(x-b)
+f(x) = phi(x) + abs(x-c)
+g(x) = f(x) + abs(x-d)
+p1 = plot(phi(x), (x,m,n), color="blue")
+p2 = plot(f(x), (x,m,n), color="red")
+p3 = plot(g(x), (x,m,n), color="green")
+p = p1 + p2 + p3
+show(p, axes_labels=["x", "y"])
+\end{verbatim}
+\end{proof}
+
+\end{document}
