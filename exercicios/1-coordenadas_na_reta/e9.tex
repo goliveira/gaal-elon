@@ -1,0 +1,71 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{../../config.tex}
+
+\title{GAAL -- Seção 1 -- Exercício 9}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E9.S1]
+  Seja $f : \R \to \R$ uma função tal que $|f(x)-f(y)| = |x-y|$ para quaisquer $x,y \in \R$.
+  \begin{enumerate}[(i)]
+    \item
+      Pondo $f(0) = a$, defina a função $g : \R \to \R$ assim: $g(x) = f(x) - a$.
+      Prove então que $|g(x)| = |x|$ para todo $x \in \R$.
+      Em particular, $g(1) = 1$ ou $g(1) = -1$.
+      Também $(g(x))^2 = x^2$.
+    \item
+      Use a identidade $xy = \frac{1}{2}[ x^2 + y^2 - (x-y)^2 ]$ para provar a igualdade $xy = g(x)\,g(y)$.
+    \item
+      Se $g(1) = 1$, mostre que $g(x) = x$ para todo $x \in \R$.
+      Se $g(1) = -1$, mostre que $g(x) = -x$ para todo $x$.
+    \item
+      Conclua que $f(x) = x + a$ para todo $x \in \R$ ou então $f(x) = -x + a$ para todo $x$.
+  \end{enumerate}
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  (i)
+  Observamos que $g(x) = f(x) - a = f(x) - f(0)$.
+  Logo
+  \[
+    |g(x)| = |f(x)-f(0)| = |x-0| = |x|
+  \]
+  para todo $x \in \R$.
+  Sendo assim, $|g(1)| = 1$, o que implica $g(1) = 1$ ou $g(1) = -1$.
+  Temos também que
+  \[
+    g(x)^2 = |g(x)|^2 = |x|^2 = x^2.
+  \]
+
+  (ii)
+  Usando as definições e propriedades, calculamos
+  \begin{align*}
+    xy & = 2^{-1} [x^2 + y^2 - (x-y)^2 ] \\
+    & = 2^{-1} [ x^2 + y^2 - |x-y|^2 ] \\
+    & = 2^{-1} [ g(x)^2 + g(y)^2 - |f(x) - f(y)|^2 ] \\
+    & = 2^{-1} [ g(x)^2 + g(y)^2 - |f(x) - a - f(y) + a|^2 ] \\
+    & = 2^{-1} [ g(x)^2 + g(y)^2 - |g(x) - g(y)|^2 ] \\
+    & = 2^{-1} [ g(x)^2 + g(y)^2 - (g(x) - g(y))^2 ] \\
+    & = g(x)g(y).
+  \end{align*}
+
+  (iii)
+  Se $g(1)=1$, então $x = x(1) = g(x)g(1) = g(x)$ para todo $x \in \R$.
+  Se $g(1)=-1$, então $x = x(1) = g(x)g(1) = g(x)(-1) = -g(x)$ para todo $x \in \R$.
+  Portanto $g(x) = -x$ para todo $x$.
+
+  (iv)
+  Observamos que $f(x) = g(x) + a$.
+  Pela parte $(i)$, temos $g(1) = 1$ ou $g(1) = -1$.
+  Usando (iii), isso implica $g(x)=x$ ou $g(x) = -x$ para todo $x$, respectivamente.
+  Portanto $f(x) = x + a$ ou $f(x) = -x + a$ para todo $x \in \R$.
+\end{proof}
+
+\end{document}
