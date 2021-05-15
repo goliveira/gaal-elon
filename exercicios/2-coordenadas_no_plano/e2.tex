@@ -1,0 +1,27 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{../../config.tex}
+
+\title{GAAL -- Seção 2 -- Exercício 2}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E2.S2]
+  O conjunto $r$ formado pelos pontos $(x,5)$ cujas ordenadas são iguais a $5$ é uma reta paralela ao eixo $OX$.
+  Determine o simétrico do ponto $P = (3,-2)$ em relação à reta $r$.
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  A reta $s$ perpendicular a $r$ passando por $P$ é formada pelos pontos $(3,y)$ cujas abcissas são iguais a $3$.
+  O ponto $P$ está à distância $5-(-2) = 7$ da reta $r$.
+  A intersecção da reta $r$ com a reta $s$ é o ponto $(3,5)$.
+  Logo o simétrico de $P$ em relação à reta $r$ é o ponto $P' = (3,5+7) = (3,12)$.
+\end{proof}
+
+\end{document}
