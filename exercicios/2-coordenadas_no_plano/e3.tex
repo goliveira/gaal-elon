@@ -1,0 +1,30 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{../../config.tex}
+
+\title{GAAL -- Seção 2 -- Exercício 3}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E3.S2]
+  Enuncie e responda uma questão análoga à do exercício anterior, com a reta $r' = \{(a,y) \ | \ y \in \R\}$ paralela ao eixo $OY$, e o ponto $P = (c,d)$.
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  O conjunto $r'$ formado pelos pontos $(a,y)$ cujas abcissas são iguais a $a$ é uma reta paralela ao eixo $OY$.
+  Determine o simétrico do ponto $P = (c,d)$ em relação à reta $r'$.
+
+  Seja $P'$ o simétrico de $P$ em relação à reta $r'$.
+  Então $P'$ tem a forma $P' = (c',d)$.
+  Além disso, o ponto médio do segmento $PP'$ é o ponto $(d,a)$.
+  Logo $(c'+c)/2 = a$, ou seja, $c' = 2a-c$.
+  Portanto $P' = (2a-c,d)$.
+\end{proof}
+
+\end{document}
