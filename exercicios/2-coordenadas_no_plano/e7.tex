@@ -1,0 +1,26 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{../../config.tex}
+
+\title{GAAL -- Seção 2 -- Exercício 7}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E7.S2]
+  Dado $A = (x,y)$ com $x \neq y$, observe que os pontos $B = (x,x)$, $C = (y,x)$ e $D = (y,y)$ formam, juntamente com $A$, os vértices de um quadrado de lados paralelos aos eixos.
+  A partir daí determine o simétrico de $A$ relativamente à diagonal $\Delta = \{(x,x) \ | \ x \in \R \}$.
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  Seja $A'$ o simétrico de $A$ em relação à diagonal $\Delta$.
+  As diagonais $AC$ e $BD$ do quadrado se intersectam mutuamente no ponto médio e são perpendiculares.
+  Logo $A' = C = (y,x)$.
+\end{proof}
+
+\end{document}
