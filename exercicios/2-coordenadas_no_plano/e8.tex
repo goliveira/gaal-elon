@@ -1,0 +1,30 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{../../config.tex}
+
+\title{GAAL -- Seção 2 -- Exercício 8}
+\author{\empty}
+\date{\empty}
+\newcommand\onlyinsubfileone\maketitle
+
+\begin{document}
+
+\onlyinsubfileone
+
+\begin{exercicio-gaal}[E8.S2]
+  Com argumento análogo ao do exercício anterior, determine o simétrico do ponto $A = (x,y)$ em relação à diagonal
+  \[
+    \Delta' = \{(x,-x) \ | \ x \in \R\}.
+  \]
+\end{exercicio-gaal}
+
+\begin{proof}[Solução]
+  Seja $A''$ o simétrico de $A$ em relação à diagonal $\Delta'$.
+  Consideremos os pontos $B = (x,-x)$, $C = (-y,-x)$ e $D = (-y,y)$.
+  Esses pontos formam, juntamente com $A$, os vértices de um quadrado de lados paralelos aos eixos.
+  Logo as diagonais $AC$ e $BD$ do quadrado se intersectam mutuamente ao meio e são perpendiculares.
+  Portanto $A'' = C = (-y,-x)$.
+\end{proof}
+
+\end{document}
